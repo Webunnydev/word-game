@@ -10,7 +10,10 @@ body{
 h1{
     text-align:center;
     margin-top:3rem;
-    font-size:10vw;
+    font-size:9vw;
+    font-family: 'Orbitron', sans-serif;
+    word-spacing:1rem;
+
 }
 .container{
     display:flex;
@@ -23,6 +26,7 @@ h1{
 .format{
     color:white;
     font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing:0.1rem;
     word-spacing:1rem;
     border:5px solid white;
