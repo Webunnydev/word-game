@@ -2,4 +2,42 @@
     padding:0;
     margin:0;
 }
+body{
+    background-color:whitesmoke;
+    color: purple;
+    height:90vh;
+}
+h1{
+    text-align:center;
+    margin-top:3rem;
+    font-size:10vw;
+}
+.container{
+    display:flex;
+    gap:10rem;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    margin-top:5rem;
+}
+.format{
+    color:white;
+    font-size: 2rem;
+    letter-spacing:0.1rem;
+    word-spacing:1rem;
+    border:5px solid white;
+    border-radius:10%;
+    height:70%;
+    width:25%;
+}
+.container .col1{
+    background-color:#8FCCFF;
+}
+.container .col2{
+    background-color:#20BF9F;
+}
+h3{
+    margin-top:2rem;
+    text-align:center;
 
+}
