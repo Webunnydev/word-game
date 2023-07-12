@@ -1,11 +1,8 @@
-*{
-    padding:0;
-    margin:0;
-}
+ 
 body{
     background-color:whitesmoke;
     color: purple;
-    height:90vh;
+ 
 }
 h1{
     text-align:center;
@@ -13,26 +10,21 @@ h1{
     font-size:9vw;
     font-family: 'Orbitron', sans-serif;
     word-spacing:1rem;
-
 }
 .container{
     display:flex;
     gap:10rem;
     justify-content:center;
     align-items:center;
-    height:70vh;
+    height:80vh;
     margin-top:5rem;
 }
 .format{
     color:white;
-    font-size: 2rem;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing:0.1rem;
-    word-spacing:1rem;
     border:5px solid white;
     border-radius:10%;
+    text-align:center;
     height:70%;
-    width:25%;
 }
 .container .col1{
     background-color:#8FCCFF;
@@ -41,7 +33,45 @@ h1{
     background-color:#20BF9F;
 }
 h3{
-    margin-top:2rem;
-    text-align:center;
+    letter-spacing:3px;
+    word-spacing:4px;
+    margin-top:20px;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+}
+.word{
+    font-weight:bolder;
+    letter-spacing:20px;
+    margin-top:50px;
+    font-size:30px;
+    padding:0 55px 0 55px;
+    max-width:25%;
+}
+.button1{
+    margin:20px 0 20px 0;
+    font-size:20px;
+    font-family: 'Orbitron', sans-serif;
+    background-color:green;
+    color:white;
+    padding:15px 40px 15px 40px;
+    border-radius:20px;
+    border:4px solid white;
+    cursor:pointer;
+}
+.button1:hover{
+    background-color:white;
+    color:green;
+    border:4px solid green;
+}
+.button1:hover:active{
+    opacity:0.5;
+}
 
+@media(max-width:1000px){
+    .container{
+        flex-direction:column;
+        height:100vh;
+        gap:5rem;
+        margin:10em 0 10em 0;
+    }
 }
