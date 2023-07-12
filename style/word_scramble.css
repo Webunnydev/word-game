@@ -1,0 +1,38 @@
+body{
+    background-color:#8FCCFF;
+    color:white;
+}
+h1{
+    text-align:center;
+    font-size:50px;
+    word-spacing:20px;
+    letter-spacing:4px;
+    font-family: 'Orbitron', sans-serif;
+}
+.container{
+    display:flex;
+    gap:30%;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    border:2px solid yellow;
+    height:70vh;
+}
+.col1{
+    background-color:white;
+    color:black;
+    height:50vh;
+    width:25%;
+    border-radius:5%;
+    align-items:center;
+    justify-content:center;
+}
+button{
+    background-color:green;
+    color:white;
+    padding: 20px 40px 20px 40px;
+    border-radius:20px;
+    border:2px solid white;
+    font-size:20px;
+    letter-spacing:3px;
+}
