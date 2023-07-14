@@ -11,4 +11,3 @@ document.querySelector(".start").addEventListener("click", function(){
     $(".scramble").slideDown();
 })
 
- 

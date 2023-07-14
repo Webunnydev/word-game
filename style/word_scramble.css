@@ -22,13 +22,13 @@ h1{
     background-color:white;
     color:black;
     height:50vh;
-    width:25%;
+    min-width:25%;
     border-radius:5%;
     align-items:center;
     justify-content:center;
     box-shadow:10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-button{
+.button1{
     background-color:green;
     color:white;
     margin-top:40%;
@@ -40,11 +40,43 @@ button{
     cursor:pointer;
     font-weight: bolder;
 }
-button:hover{
+.button1:hover{
     background-color:white;
     color:green;
     border:4px solid green;
 }
-button:hover:active{
+.button1:hover:active{
     opacity:0.5;
+}
+.scramble{
+    height:50vh;
+    padding:50px 30px 50px 30px;
+    text-align:left;
+}
+.scramble h2{
+    text-transform:uppercase;
+    font-weight:bolder;
+    letter-spacing:1.5vw;
+    font-size:2vw;
+    text-align:center;
+}
+.scramble p{
+    margin:40px 0 40px 0;
+}
+input{
+    margin-bottom:25px;
+    border:4px solid green;
+    max-width:400px;
+}
+input, select, textarea{
+    color:green;
+    font-size:1.5em;
+    height:5vh;
+    font-weight:bolder;
+}
+.btn button{
+    background-color:green;
+    color:white;
+    padding:20px 30px 20px 30px;
+    font-size:20px;
 }
