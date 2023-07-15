@@ -21,8 +21,8 @@ h1{
 .col1{
     background-color:white;
     color:black;
-    height:50vh;
-    min-width:25%;
+    height:65vh;
+    min-width:30%;
     border-radius:5%;
     align-items:center;
     justify-content:center;
@@ -31,7 +31,6 @@ h1{
 .button1{
     background-color:green;
     color:white;
-    margin-top:40%;
     padding: 20px 40px 20px 40px;
     border-radius:20px;
     border:2px solid white;
@@ -42,7 +41,7 @@ h1{
 }
 .button1:hover{
     background-color:white;
-    color:green;
+    color: green;
     border:4px solid green;
 }
 .button1:hover:active{
@@ -50,33 +49,56 @@ h1{
 }
 .scramble{
     height:50vh;
-    padding:50px 30px 50px 30px;
+    padding:20px 30px 50px 30px;
     text-align:left;
 }
 .scramble h2{
     text-transform:uppercase;
     font-weight:bolder;
     letter-spacing:1.5vw;
-    font-size:2vw;
+    font-size:40px;
     text-align:center;
 }
 .scramble p{
     margin:40px 0 40px 0;
 }
+.input-field{
+    display:flex;
+    gap:10px;
+}
+#time{
+    background-color:green;
+    color:white;
+    text-align:center;
+    margin-top:0px;
+    width:8vh;
+    height:6vh;
+    border:2px solid green;
+}
+
 input{
-    margin-bottom:25px;
-    border:4px solid green;
-    max-width:400px;
+    border:4px solid #8FCCFF;
+    width:47vh;
 }
 input, select, textarea{
     color:green;
-    font-size:1.5em;
+    font-size:2.5vh;
     height:5vh;
     font-weight:bolder;
 }
+.btn{
+    display:flex;
+    gap:20px;
+
+}
 .btn button{
-    background-color:green;
+    background-color:#8FCCFF;
     color:white;
-    padding:20px 30px 20px 30px;
-    font-size:20px;
+    font-size:2vh;
+    padding:2vh 7vh 2vh 7vh;
+    border-radius:10px;
+    border:5px solid white;
+}
+#btn1{
+    background-color:green;
 }
