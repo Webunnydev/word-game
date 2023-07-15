@@ -61,6 +61,7 @@ h1{
 }
 .scramble p{
     margin:40px 0 40px 0;
+    font-size:1.3vw;
 }
 .input-field{
     display:flex;
