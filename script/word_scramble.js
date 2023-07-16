@@ -25,14 +25,14 @@ wordScramble();
 document.querySelector("#btn1").addEventListener("click", function(){
     var inputAnswer = document.getElementById("answer").value.toUpperCase();
     if(inputAnswer===answer[randWord]){
-        $(".note").html("<span>Congragulations</span>, you got the answer.");
+        $(".note").html("<span>Congragulations</span>, you got the answer.").hide().delay(200).fadeIn();
     }
     else if(inputAnswer===""){
-        $(".note").html("<span>No Answer</span>");
+        $(".note").html("<span>No Answer</span>").hide().delay(200).fadeIn();
         $("span").css("color", "red");
     }
     else{
-        $(".note").html("<span>Incorrect</span>, you got the wrong answer.");
+        $(".note").html("<span>Incorrect</span>, you got the wrong answer.").hide().delay(200).fadeIn();
         $("span").css("color", "red");
     }
 });

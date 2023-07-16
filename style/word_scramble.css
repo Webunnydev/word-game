@@ -103,9 +103,7 @@ input, select, textarea{
 #btn1{
     background-color:green;
 }
-.note{
-    transition: 2s;
-}
+ 
 .note span{
     font-weight:bolder;
     color:#28AE7B;
