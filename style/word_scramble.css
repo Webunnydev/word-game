@@ -61,7 +61,7 @@ h1{
 }
 .scramble p{
     margin:40px 0 40px 0;
-    font-size:1.3vw;
+    font-size:25px;
 }
 .input-field{
     display:flex;
@@ -102,4 +102,11 @@ input, select, textarea{
 }
 #btn1{
     background-color:green;
+}
+.note{
+    transition: 2s;
+}
+.note span{
+    font-weight:bolder;
+    color:#28AE7B;
 }
