@@ -22,11 +22,14 @@ h1{
     background-color:white;
     color:black;
     height:65vh;
-    min-width:30%;
+    width:70vh;
     border-radius:5%;
     align-items:center;
     justify-content:center;
     box-shadow:10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.start{
+    margin-top:40%;
 }
 .button1{
     background-color:green;
@@ -49,7 +52,7 @@ h1{
 }
 .scramble{
     height:50vh;
-    padding:20px 30px 50px 30px;
+    padding:0px 30px 50px 30px;
     text-align:left;
 }
 .scramble h2{
@@ -72,8 +75,9 @@ h1{
     color:white;
     text-align:center;
     margin-top:0px;
+    padding-top:2%;
     width:8vh;
-    height:6vh;
+    height:5vh;
     border:2px solid green;
 }
 

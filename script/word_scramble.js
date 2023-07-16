@@ -28,7 +28,7 @@ document.querySelector("#btn1").addEventListener("click", function(){
         $(".note").html("<span>Congragulations</span>, you got the answer.").hide().delay(200).fadeIn();
     }
     else if(inputAnswer===""){
-        $(".note").html("<span>No Answer</span>").hide().delay(200).fadeIn();
+        $(".note").html("<span>No Answer</span>, Enter your answer to check.").hide().delay(200).fadeIn();
         $("span").css("color", "red");
     }
     else{
@@ -37,3 +37,25 @@ document.querySelector("#btn1").addEventListener("click", function(){
     }
 });
 
+
+
+var timeLimit=12;
+var timerId = setInterval(timeOut, 1000);
+    
+function timeOut() {
+    if (timeLimit === -1) {
+        clearTimeout(timerId);
+        $("#time").html("Time out");
+    }
+    else {
+        $("#time").html(timeLimit + "s");
+        if(timeLimit<=10){
+            $("#time").css("background-color", "red");
+    }
+    else{
+        $("#time").html(timeLimit + "s");
+    }
+    timeLimit--;
+}
+
+};
