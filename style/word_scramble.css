@@ -78,7 +78,7 @@ h1{
     padding-top:2%;
     width:8vh;
     height:5vh;
-    border:2px solid green;
+    border-radius:20px;
 }
 
 input{
