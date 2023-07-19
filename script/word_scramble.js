@@ -11,6 +11,7 @@ document.querySelector(".start").addEventListener("click", function(key){
     $(".scramble").slideDown();
 
     function triggered(){
+        document.querySelector("#btn2").disabled=true;
         var timeLimit=12;
         var timeRemaining = setInterval(timeOut, 1000);
     
@@ -20,6 +21,7 @@ document.querySelector(".start").addEventListener("click", function(key){
                 var audio = new Audio("../audio/countdown2.mp3");
                 audio.play();
                 clearInterval(timeRemaining);
+                document.querySelector("#btn2").disabled=false;
             }
             else {
                 $("#time").html(timeLimit + "s");
@@ -44,27 +46,25 @@ document.querySelector(".start").addEventListener("click", function(key){
         wordScramble();
     
         function clicked(){
+            var audio = new Audio("../audio/countdown2.mp3");
+            audio.play();
             var inputAnswer = document.getElementById("answer").value.toUpperCase();
             if(inputAnswer===answer[randWord]){
                 $(".note").html("<span>Congragulations</span>, you got the answer.").hide().delay(200).fadeIn();
                 $("input,#btn1").hide();
                 clearInterval(timeRemaining);
-                var audio = new Audio("../audio/countdown2.mp3");
-                audio.play();
+                document.querySelector("#btn2").disabled=false;
             }
             else if(inputAnswer===""){
                 $(".note").html("<span>No Answer</span>, Enter your answer to check.").hide().delay(200).fadeIn();
                 $("span").css("color", "red");
-                var audio = new Audio("../audio/countdown2.mp3");
-                audio.play();
             }
             else{
                 $(".note").html("<span>Incorrect</span>, you got the wrong answer. Try next word").hide().delay(200).fadeIn();
                 $("span").css("color", "red");
                 $("input,#btn1").hide();
                 clearInterval(timeRemaining);
-                var audio = new Audio("../audio/countdown2.mp3");
-                audio.play();
+                document.querySelector("#btn2").disabled=false;
             }
         };
     
@@ -79,10 +79,10 @@ document.querySelector(".start").addEventListener("click", function(key){
     triggered();
 
     document.querySelector("#btn2").addEventListener("click", function(){
-        document.getElementById("answer").value ='';
         $(".note").html("<span>Answer</span> is displayed here.");
         triggered();
         $("input,#btn1").show();
+        document.getElementById("answer").value ='';
     });
 
 });
