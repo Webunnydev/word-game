@@ -6,7 +6,7 @@ import {
 
 
 $(".scramble").hide();
-document.querySelector(".start").addEventListener("click", function(){
+document.querySelector(".start").addEventListener("click", function(key){
     $(".start").slideUp();
     $(".scramble").slideDown();
     var timeLimit=30;
@@ -40,10 +40,11 @@ function wordScramble(){
 }
 wordScramble();
 
-document.querySelector("#btn1").addEventListener("click", function(){
+
+function clicked(){
     var inputAnswer = document.getElementById("answer").value.toUpperCase();
     if(inputAnswer===answer[randWord]){
-        $(".note").html("<span>Congragulations</span>, you got the answer. Try again").hide().delay(200).fadeIn();
+        $(".note").html("<span>Congragulations</span>, you got the answer.").hide().delay(200).fadeIn();
  
     }
     else if(inputAnswer===""){
@@ -52,16 +53,22 @@ document.querySelector("#btn1").addEventListener("click", function(){
      
     }
     else{
-        $(".note").html("<span>Incorrect</span>, you got the wrong answer.").hide().delay(200).fadeIn();
+        $(".note").html("<span>Incorrect</span>, you got the wrong answer. Try Again").hide().delay(200).fadeIn();
         $("span").css("color", "red");
 
  
     }
-});
+};
 
 
- 
- 
+
+document.querySelector("#btn1").addEventListener("click", clicked);
+  $(document).keydown(function(event) {
+   if (event.keyCode == 13) {
+    clicked();
+   }
+  });
+
 
 
 
