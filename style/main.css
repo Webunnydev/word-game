@@ -24,7 +24,7 @@ h1{
     border:5px solid white;
     border-radius:10%;
     text-align:center;
-    height:70%;
+    height:60vh;
 }
 .container .col1{
     background-color:#8FCCFF;
@@ -74,5 +74,16 @@ h3{
         height:100vh;
         gap:5rem;
         margin:10em 0 10em 0;
+    }
+}
+@media(max-width:400px){
+    .format{
+        width:40vh;
+        height:70vh;
+    }
+    .word{
+        font-size:20px;
+        letter-spacing:15px;
+        margin-left:-15px;
     }
 }
