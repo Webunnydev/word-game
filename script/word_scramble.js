@@ -12,7 +12,7 @@ document.querySelector(".start").addEventListener("click", function(key){
 
     function triggered(){
         document.querySelector("#btn2").disabled=true;
-        var timeLimit=12;
+        var timeLimit=30;
         var timeRemaining = setInterval(timeOut, 1000);
     
         function timeOut(){
