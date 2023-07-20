@@ -1,5 +1,5 @@
 import {
-    scramble,
+    guessing,
     answer,
     meaning
 } from './word_dictionary.js';
@@ -37,10 +37,10 @@ document.querySelector(".start").addEventListener("click", function(key){
             }
          };
     
-        var randWord = Math.floor(Math.random()*scramble.length);
+        var randWord = Math.floor(Math.random()*guessing.length);
     
         function wordScramble(){
-            document.querySelector("#word").innerHTML = scramble[randWord];
+            document.querySelector("#word").innerHTML = guessing[randWord];
             document.querySelector("#hint").innerHTML = "<b>HINT: </b>" + meaning[randWord];
         };
         wordScramble();
