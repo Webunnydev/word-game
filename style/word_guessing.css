@@ -113,3 +113,30 @@ input, select, textarea{
     font-weight:bolder;
     color:#28AE7B;
 }
+@media(max-width:500px){
+    .col1{
+        width:40vh;
+        height:60vh;
+    }
+    .scramble h2{
+        font-size:20px;
+    }
+    .scramble p{
+        font-size:14px;
+    }
+    input{
+        width:20vh;
+    }
+    #time{
+        font-size:15px;
+        border-radius:10px;
+        margin-top:2px;
+    }
+    .btn{
+        gap:10px;
+    }
+    .btn button{
+        padding:10px 15px 10px 15px;
+        margin-bottom:-30px;
+    }
+}
